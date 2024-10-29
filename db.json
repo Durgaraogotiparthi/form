@@ -1,45 +1,4 @@
 {
-    "teams": [
-      {
-        "name": "Bengal Warriors",
-        "details": "The Bengal Warriors are a professional Kabaddi team based in Kolkata, West Bengal."
-      },
-      {
-        "name": "Bengaluru Bulls",
-        "details": "Bengaluru Bulls is a franchise based in Bengaluru, Karnataka, and one of the strongest teams in the Pro Kabaddi League."
-      },
-      {
-        "name": "Dabang Delhi KC",
-        "details": "Dabang Delhi KC is a Delhi-based Kabaddi team that has made a strong impact in the league."
-      },
-      {
-        "name": "Gujarat Giants",
-        "details": "Gujarat Giants are known for their strong defense and teamwork in the Pro Kabaddi League."
-      },
-      {
-        "name": "Haryana Steelers",
-        "details": "Haryana Steelers represent the state of Haryana and are known for their aggressive raiders."
-      },
-      {
-        "name": "Jaipur Pink Panthers",
-        "details": "Owned by Bollywood star Abhishek Bachchan, the Jaipur Pink Panthers are one of the original teams of the league."
-      },
-      {
-        "name": "Patna Pirates",
-        "details": "Patna Pirates are the most successful team in Pro Kabaddi League history with multiple championships."
-      },
-      {
-        "name": "Puneri Paltan",
-        "details": "Puneri Paltan is a Pune-based team known for their resilience and competitive spirit."
-      },
-      {
-        "name": "Tamil Thalaivas",
-        "details": "Tamil Thalaivas represent Tamil Nadu and are famous for their never-give-up attitude."
-      },
-      {
-        "name": "U Mumba",
-        "details": "U Mumba is a Mumbai-based franchise and one of the most popular teams in the Pro Kabaddi League."
-      }
-    ]
+    "users": []
   }
   

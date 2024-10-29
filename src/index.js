@@ -14,12 +14,18 @@ import { ChakraProvider } from '@chakra-ui/react';
 // import Heading from './Heading';
 // import { MyProvider } from './MyContext';
 // import ComponentC from './ComponentC';
-// import Main from './main';
+import Main from './main';
 // import Youtube from './useform/useFormpractice.js'
 // import Kabaddi from './cricket';
 
-import ZodPractice from './zods';
+// import ZodPractice from './zods';
+// import Form from './FirstTask/table';
+// import Appss from './recycle';
+// import UserTable from './FirstTask/userTable';
 
+
+
+// import Customer from './youtube/customer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ChakraProvider>
@@ -36,10 +42,15 @@ root.render(
     {/* <New/> */}
     {/* <Todo/> */}
     {/* <Hookpractice/> */}
-    {/* <Main/> */}
+    <Main/>
     {/* <Youtube/> */}
     {/* <Kabaddi/> */}
-    <ZodPractice/>
+    {/* <ZodPractice/> */}
+    {/* <Form/> */}
+    {/* <Appss/> */}
+    {/* <UserTable/> */}
+    {/* <Customer/> */}
+  
   </React.StrictMode>
   </ChakraProvider>
 );

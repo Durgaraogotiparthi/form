@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './home';
+import Home from './youtube/home';
 import Todo from './todolist';
 // import About from './about';
 // import Contact from './contact';
@@ -9,7 +9,7 @@ import App from './App';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Flex, Box, Heading} from '@chakra-ui/react';
 import Kabaddi from './cricket';
-
+import UserTable from './FirstTask/userTable';
 function Main() {
 
     function Header() {
@@ -22,6 +22,8 @@ function Main() {
                     <li style={{ margin: '0 10px' }}><Link to="/form">Forms</Link></li>
                     <li style={{ margin: '0 10px' }}><Link to="/card">Card</Link></li>
                     <li style={{ margin: '0 10px' }}><Link to="/kabadi">Kaabadi</Link></li>
+                    <li style={{ margin: '0 10px' }}><Link to="/usertable">UserTable</Link></li>
+                    
                 </Flex>
             </Flex>
         );
@@ -37,6 +39,7 @@ function Main() {
                     <Route path="/form" element={<Task />} />
                     <Route path="/card" element={<App />} />
                     <Route path="/kabadi" element={<Kabaddi/>} />
+                    <Route path="/usertable" element={<UserTable/>} />
                 </Routes>
             </Box>
         </BrowserRouter>

@@ -3,13 +3,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { FormLabel, Input,Button } from '@chakra-ui/react';
 
-function name(a,b){
-  
-}
-
 function ZodPractice(){
-
-  c
   const {register,handleSubmit} = useForm();
 
   const onSubmit = (data) =>{

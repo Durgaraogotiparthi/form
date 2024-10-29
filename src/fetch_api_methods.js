@@ -76,10 +76,10 @@ function FetchApi() {
     // const postData = async () => {
     //     const options = {
     //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //         },
-    //         body: JSON.stringify({ title: 'Updated Title' })
+            // headers: {
+            //     'Content-Type': 'application/json',
+            // },
+            // body: JSON.stringify({ title: 'Updated Title' })
     //     };
 
     //     try {

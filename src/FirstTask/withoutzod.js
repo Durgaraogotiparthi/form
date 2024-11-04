@@ -1,21 +1,20 @@
 import {
-    Button,
-    Modal,
-    ModalOverlay,
-    ModalContent,
-    ModalHeader,
-    ModalCloseButton,
-    ModalBody,
-    ModalFooter,
-    FormControl,
-    FormLabel,
-    Input,
-    useDisclosure,
-    FormErrorMessage,
-    Text,
-    Spinner,
-    RadioGroup,
-    Radio,
+Button,
+Modal,
+ModalOverlay,
+ModalContent,
+ModalHeader,
+ModalCloseButton,
+ModalBody,
+ModalFooter,
+FormControl,
+FormLabel,
+Input,
+useDisclosure,
+FormErrorMessage,
+Text,
+RadioGroup,
+Radio,
   } from '@chakra-ui/react';
   import React, { useState } from 'react';
   import { useForm } from 'react-hook-form';
@@ -23,16 +22,16 @@ import {
   function WithoutZod() {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const [value, setValue] = useState([]);
-    const [loading, setLoading] = useState(false); // Added loading state
+    const [loading, setLoading] = useState(false); 
   
     const onSubmit = async (data) => {
-      setLoading(true); // Set loading to true
+      setLoading(true); 
       console.log(data);
-      setValue((prev) => [...prev, data]); // Update value state
+      setValue((prev) => [...prev, data]); 
       console.log(value);
       onClose();
       reset();
-      setLoading(false); // Reset loading state
+      setLoading(false); 
     };
   
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -133,13 +132,12 @@ import {
 
               <FormControl>
               <FormLabel htmlFor='gender'>Gender</FormLabel>
-              <RadioGroup mt={4} ml={2}  {...register('gender',{required:"Gender is required feild"})}>
+              <RadioGroup mt={4} ml={2}>
                         <Radio value='male'>Male</Radio>
                         <Radio value='female'>FeMale</Radio>
                         <Radio value='others'>Others</Radio>
                     </RadioGroup>
                     <FormErrorMessage>
-                        <Text>{errors.gender?.message}</Text>
                     </FormErrorMessage>
               </FormControl>
             </ModalBody>
@@ -149,7 +147,7 @@ import {
                 colorScheme='blue'
                 mr={3}
                 onClick={handleSubmit(onSubmit)}
-                isLoading={loading} // Show loading spinner
+                isLoading={loading} 
               >
                 Save
               </Button>

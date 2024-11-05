@@ -10,6 +10,9 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Flex, Box, Heading} from '@chakra-ui/react';
 import Kabaddi from './cricket';
 import UserTable from './FirstTask/userTable';
+import Employee from './employee';
+import Loginpage from './login';
+import Reports from './Reports/reports';
 function Main() {
 
     function Header() {
@@ -23,6 +26,10 @@ function Main() {
                     <li style={{ margin: '0 10px' }}><Link to="/card">Card</Link></li>
                     <li style={{ margin: '0 10px' }}><Link to="/kabadi">Kaabadi</Link></li>
                     <li style={{ margin: '0 10px' }}><Link to="/usertable">UserTable</Link></li>
+                    <li style={{ margin: '0 10px' }}><Link to="/loginpage">Login Page</Link></li>
+                    <li style={{ margin: '0 10px' }}><Link to="/emploeeform">Emploee Form</Link></li>
+                    <li style={{ margin: '0 10px' }}><Link to="/reports">Reports</Link></li>
+                    
                     
                 </Flex>
             </Flex>
@@ -40,6 +47,9 @@ function Main() {
                     <Route path="/card" element={<App />} />
                     <Route path="/kabadi" element={<Kabaddi/>} />
                     <Route path="/usertable" element={<UserTable/>} />
+                    <Route path='/loginpage' element={<Loginpage/>}/>
+                    <Route path='/emploeeform' element={<Employee/>}/>
+                    <Route path='/reports' element={<Reports/>}/>
                 </Routes>
             </Box>
         </BrowserRouter>

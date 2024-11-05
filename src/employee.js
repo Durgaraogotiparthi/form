@@ -46,6 +46,7 @@ function Employee() {
               <Input id="firstname" type="text" placeholder="Enter your first name" {...register('firstname')} />
               {errors.firstname && <Text color="red">{errors.firstname.message}</Text>}
             </FormControl>
+            
             <FormControl>
               <FormLabel htmlFor="middlename">Middle Name</FormLabel>
               <Input id="middlename" type="text" placeholder="Enter your middle name" {...register('middlename')} />
@@ -65,6 +66,7 @@ function Employee() {
                 <option>Full stack Developer</option>
               </Select>
             </FormControl>
+
             <FormControl isInvalid={!!errors.email}>
               <FormLabel htmlFor="email">Email</FormLabel>
               <Input type="email" id="email" placeholder="@gmail.com" {...register('email')} />
@@ -85,6 +87,7 @@ function Employee() {
               <FormLabel htmlFor="employeeid">Employee Id</FormLabel>
               <Input type="number" id="employeeid" />
             </FormControl>
+
             <FormControl>
               <FormLabel htmlFor="status">Status</FormLabel>
               <Select {...register('status')}>
@@ -105,6 +108,7 @@ function Employee() {
               <Input id="department" type="text" placeholder="Enter your department" {...register('department')} />
               {errors.department && <Text color="red">{errors.department.message}</Text>}
             </FormControl>
+
             <FormControl isInvalid={!!errors.age}>
               <FormLabel htmlFor="age">Age</FormLabel>
               <NumberInput id="age">

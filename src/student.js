@@ -11,10 +11,15 @@ function Student() {
     };
 
     return (
-        <Box p={4} width={{ base: '80%', sm: '60%',md:'40%', lg: '60%' }}>
+        <div>
             <Heading as="h2" size="lg" mb={6} textAlign="center">
                 Student Registration
             </Heading>
+       
+        <Box p={4} >
+        {/* width={{ base: '80%', sm: '60%',md:'40%', lg: '60%' }} */}
+    <Grid templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }} gap={4} mb="4">
+
             <form onSubmit={handleSubmit(onSubmit)}>
                 <Stack spacing={4}>
                     <HStack spacing={4} justifyContent="center">
@@ -106,7 +111,9 @@ function Student() {
 
                 <Button type='submit' mb={4} colorScheme="teal">Submit</Button>
             </form>
+            </Grid>
         </Box>
+        </div>
     );
 }
 

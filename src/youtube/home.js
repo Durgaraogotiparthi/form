@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Heading, Table, Tbody, Td, Th, Thead, Tr, HStack, Spacer } from "@chakra-ui/react";
+import { Heading, Table, Tbody, Td, Th, Thead, Tr, HStack, Spacer, Input, Box } from "@chakra-ui/react";
 import UserModal from './create';
 
 function Home() {
   const [users, setUsers] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const postData = async () => {
     let fetchData = await fetch('https://jsonplaceholder.typicode.com/users');
@@ -26,15 +27,34 @@ function Home() {
     setUsers((prevUsers) => [...prevUsers, { ...newUser, id: prevUsers.length + 1 }]);
   };
 
+ 
+  const filteredUsers = users.filter((user) =>
+    user.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    user.email.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    user.phone.includes(searchQuery)
+  );
+
   return (
     <div>
       <Heading textAlign="center" mt="4">List of Users</Heading>
+      
       <HStack justify="flex-end" mb={4} bg="lightblue" p="2">
         <Heading>Durgarao</Heading>
         <Spacer />
+        <Box>
+        <Input
+          placeholder="Search by name, email, or phone..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          size="md"
+        />
+      </Box>
         <UserModal onAddUser={handleAddUser} textAlign="right" />
       </HStack>
-    
+
+     
+      
+      
       <Table variant="simple" border="1px solid black">
         <Thead>
           <Tr>
@@ -44,7 +64,7 @@ function Home() {
           </Tr>
         </Thead>
         <Tbody>
-          {users.map((user, index) => (
+          {filteredUsers.map((user, index) => (
             <Tr key={index}>
               <Td border="1px solid black">{user.name}</Td>
               <Td border="1px solid black">{user.email}</Td>

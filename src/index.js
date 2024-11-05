@@ -14,7 +14,8 @@ import { ChakraProvider } from '@chakra-ui/react';
 // import Heading from './Heading';
 // import { MyProvider } from './MyContext';
 // import ComponentC from './ComponentC';
-// import Main from './main';
+import Main from './main';
+// import Reports from './Reports/reports';
 // import Youtube from './useform/useFormpractice.js'
 // import Kabaddi from './cricket';
 
@@ -25,7 +26,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 // import Employee from './employee';
 // import Loginpage from './login';
 // import Student from './student';
-import Employee from './employee';
+// import Employee from './employee';
 
 
 
@@ -46,7 +47,8 @@ root.render(
     {/* <New/> */}
     {/* <Todo/> */}
     {/* <Hookpractice/> */}
-    {/* <Main/> */}
+    <Main/>
+    {/* <Reports/> */}
     {/* <Youtube/> */}
     {/* <Kabaddi/> */}
     {/* <ZodPractice/> */}
@@ -57,7 +59,7 @@ root.render(
     {/* <Employee/> */}
     {/* <Loginpage/> */}
     {/* <Student/> */}
-    <Employee/>
+    {/* <Employee/> */}
   
   </React.StrictMode>
   </ChakraProvider>

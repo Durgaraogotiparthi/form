@@ -134,6 +134,14 @@ const UserTable = () => {
     localStorage.setItem('users', JSON.stringify(updatedUsers));
   };
 
+  // const [searchQuery, setSearchQuery] = useState("");
+
+  // const filteredUsers = users.filter((user) =>
+  //   user.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+  //   user.email.toLowerCase().includes(searchQuery.toLowerCase()) ||
+  //   user.phone.includes(searchQuery)
+  // );
+
   return (
     <Container maxW="container.lg" mt={4}>
       <Box p={4} shadow="md" borderWidth="1px" borderRadius="lg" width="100%">
